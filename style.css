@@ -1,0 +1,108 @@
+body{
+    background-color: #013243;
+    margin: 0;
+    padding: 2% 10%;
+}
+*{
+    box-sizing: border-box;
+}
+.main{
+    width: 85vw;
+}
+h1{
+    font-size: 175px;
+    margin-bottom: 0;
+    color: #32F5C8;
+    z-index: 2;
+}
+p{
+    font-size: 20px;
+    width: 30%;
+    color: white;
+}
+button{
+    border: none;
+    width: 175px;
+    height: 40px;
+    outline: none;
+    background-color: #32F5C8;
+    font-weight: bold;
+    transition: 0.3s linear;
+    cursor: pointer;
+}
+button:hover{
+    background-color: transparent;
+    color: white;
+    border: 1px solid #32F5C8;
+}
+.twitter{
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+    color: white;
+    justify-content: space-between;
+    width: 16%;
+}
+img:not(.twitterImg,.logo){
+    position: absolute;
+    z-index: -1;
+
+}
+.user1{
+    top: 50%;
+    left: 80%;
+}
+.user2{
+    left: 75%;
+}
+.user3{
+    top: 25%;
+    left: 3%;
+}
+.user4{
+    top: 90%;
+    left: 70%;
+}
+.user5{
+    left: 60%;
+}
+@media screen and (max-width: 600px) {
+    body{
+        padding: 0;
+        overflow: hidden;
+    }
+    h1{
+        font-size: 50px;
+    }
+    .main{
+        width: 100vw !important;
+    }
+    p{
+        width: 100%;
+        font-size: 25px;
+    }
+    button{
+
+    }
+    .twitter{
+        width: 60%;
+    }
+    .user3{
+        top: 5%;
+    }
+    h1{
+        margin-top: 40%;
+    }
+    .user2{
+        left: 50%;
+    }
+    .user1{
+        left: 200%;
+    }
+    .user4{
+        left: 200%;
+    }
+    .user5{
+        top: 70%;
+    }
+}
